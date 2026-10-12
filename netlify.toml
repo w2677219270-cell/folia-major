@@ -1,0 +1,8 @@
+# 当前文件：Netlify 构建配置，注入 Web 版所需的网易云音乐 API 地址。
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  VITE_NETEASE_API_BASE = "https://neteasecloudmusicapi-main-api.vercel.app"
